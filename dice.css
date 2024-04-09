@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(0, 0, 51);
+    font-family:'Old English Five', sans-serif;
+    font-size: 60px;
+    color: rgba(255, 0, 0, 0.5);
+    text-align: center;
+}
+
+.dice-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 18%;
+    padding: 2px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.border-2{
+    border: 5px solid black; /* add a border */
+    background-color: rgba(253, 1, 1, 0.5); /* set the background color to red */
+    border-radius: 100px;
+    padding: 40px;
+    width: 80%;
+    margin-left: 160px;
+    padding: 2px;
+
+}
+.dice {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.dice-number {
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    z-index: 200;
+    font-size: 60px;
+    color: white
+}
+
+.btn-roll-dice {
+    margin-top:350px;
+    padding: 40px 40px;
+    border-radius: 300px;
+    color: rgba(253, 0, 0, 0.5);
+    background-color: black;
+    border: none;
+    font-family: 'Old English Five', sans-serif;
+    font-size: 30px;
+    cursor:pointer;
+}
+
+.btn-roll-dice:hover{
+    background-color:gray;
+    opacity:60%
+}
+
+.dice-image{
+    width: 200px;
+    z-index:100;
+    align-items: center;
+}
+
+#dice-faces{
+    background-color: rgb(0, 0, 51);
+    border: none;
+    color: rgba(253, 0, 0, 0.5);
+    font-size: 60px;
+    font-family: 'Old English Five', sans-serif;
+}
+
+#dice-number{
+    background-color: rgb(0, 0, 51);
+    border: none;
+    color: rgba(253, 0, 0, 0.5);
+    font-size: 60px;
+    font-family: 'Old English Five', sans-serif;
+}
+

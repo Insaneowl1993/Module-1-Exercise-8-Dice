@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Master</title>
+    <link rel="stylesheet" href="dice.css"></link>
+    <link href="https://fonts.cdnfonts.com/css/old-english-five" rel="stylesheet">
+    <link rel="icon" href="images/d20.png">
+    <script src="dice.js" defer></script>
+</head>
+<body>
+    <h1 class="title"> Dungeon Master</h1>
+<section id="dice-options">
+    <h5>Select Your Dice</h5>
+    <div id="inputs">
+        <div>
+            <label for="dice-faces">Dice Type: D</label>
+            <input id="dice-faces" name="dice-faces" type="number"
+            min="2" max="6" step="1" value="2">
+        </div>
+        <div>
+            <label for="dice-number"> Number of Dice:</label>
+            <input id="dice-number" name="dice-number" type="number" min="1" max="5" step="1" value="1">
+        </div>
+    </div>
+</section>
+
+    <div class="border-2">
+
+    <div class ="dice-container">
+        <div class="dice">
+            <div class="dice-number">
+                <span id="number"></span>
+            </div>
+            <span id="dice-div">
+                <span id="div-clone-div">
+                    <img class="dice-image" src="images/d20.png">
+                </span>
+            </span>
+        </div>
+    </div>
+
+    <button type="button" class="btn-roll-dice" id = "dice-roll">Roll Dice</button>
+    </div>
+</body>
+</html>
